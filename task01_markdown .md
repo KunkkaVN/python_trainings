@@ -29,3 +29,8 @@ Vào trang: https://www.sublimetext.com/
 Sau đó click dow để tải về bản mới nhất
 <img src="http://i.imgur.com/U59EdqE.jpg">
 Sau đó cứ ấn next là được
+
+##6.Các công cụ hỗ trợ và viết Markdown
+---------------------------------------
+Bạn có thể sử dụng `notepad` , `notepad++` , `sublime text` ,.... để viết ngôn ngữ markdown sau đó lưu lại với đuôi là `.md`
+Sau đó có thể vào trang http://markdownlivepreview.com/ đê xem trước nội dung
