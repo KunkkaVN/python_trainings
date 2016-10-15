@@ -52,4 +52,5 @@ Sau khi chạy xong, tất cả các thư mục trong pysthon_training được 
 Lúc này ta chỉ cần đặt file task2 vào thư mục sau đó add 
 Tiếp theo ta commit cho thay đổi này
 Đặt tag theo yêu cầu của người giao ở đây là `task02_git` bằng cứ pháp `git tag task02_git`
-Sau đó chỉ việc push lên là xong
+Sau đó chỉ việc push lên là xong. Khi push nó sẽ hỏi tk và pass
+<img src="http://i.imgur.com/8Xt3D1Q.jpg">
