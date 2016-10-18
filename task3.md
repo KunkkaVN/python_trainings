@@ -8,7 +8,7 @@
 [**4.Khái niệm về thông dịch và biên dịch**](#phan4)
 
 [**5.Chương trình Hello World giữa biên dịch và thông dịch**](#phan5)
----------------------------------------------------------------------
+
 <a name="phan1"></a>
 ##1.Cài đặt Python đối với windown
 ----------------------------------
@@ -34,11 +34,13 @@ Tùy vào bạn muốn thư viện nào kèm theo thì có thể tích vào rồ
 python setup.py install```
 **Nếu bạn cài Python theo hướng dẫn ở mục 1 thì không cần cài pip nữa vì đã có mục cài sẵn cho mình**
 <img src="http://i.imgur.com/L9gAl1k.jpg">
+
 <a name="phan3"></a>
 ##3. Cài đặt biến môi trường
 ----------------------------
 -Để cài đặt biến môi trường chỉ cần click như hình khi cài python là được.
 <img src="http://i.imgur.com/jGz35GB.jpg">
+
 <a name="phan4"></a>
 ##4. Khái niệm thông dịch và biên dịch
 --------------------------------------
@@ -74,6 +76,7 @@ Như vậy chương trình viết bằng ngôn ngữ script phải có một tr�
 Nhược điểm:
 - Tại vì là ngôn ngữ thông dịch chạy line by line nên nên ngôn ngữ thông dịch không hỗ trợ đa luồn (multi thread), giao dịch (transaction)
 - Cũng do chạy line by line nên tốc độ thực thi không nhanh bằng các chương trình viết bằng ngôn ngữ biên dịch (C, C++, VB...) đã chuyên trực tiếp ra ngôn ngữ máy.
+
 <a name="phan5"></a>
 ##5. Chương trình Hello world
 -----------------------------
