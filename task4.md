@@ -13,7 +13,9 @@
 ##1. Sử dụng python như một máy tính:
 -------------------------------------
 Việc python là một trình thông dịch nên có thể thực hiện chức năng tính toán như một máy tính thông thường
+
 Ví dụ: `2*2` sẽ hiển thị ra `4` hay các biểu thức phức tạp như `(9-10)*2+2`
+
 <img src="http://i.imgur.com/08wS71E.jpg">
 
 <a name="phan2"></a>
@@ -22,8 +24,10 @@ Ví dụ: `2*2` sẽ hiển thị ra `4` hay các biểu thức phức tạp nh�
 Kiểu dữ liệu Number lưu trữ các giá trị số. Chúng là các kiểu dữ liệu immutable, hay là kiểu dữ liệu không thay đổi, nghĩa là các thay đổi về giá trị của kiểu dữ liệu số này sẽ tạo ra một đối tượng được cấp phát mới.
 
 Các đối tượng Number được tạo khi bạn gán một giá trị cho chúng. Ví dụ:
+
 ``number1=1
 number2=100``
+
 Bạn cũng có thể xóa tham chiếu tới một đối tượng Number bởi sử dụng lệnh `del`. Ví dụ `del number1`
 
 Python hỗ trợ 4 kiểu dữ liệu số, đó là:
@@ -35,8 +39,11 @@ Python hỗ trợ 4 kiểu dữ liệu số, đó là:
 - Kiểu float: số thực với dấu thập phân. Kiểu này cũng có thể được viết ở dạng số mũ của 10 với E hoặc e như (2.5e2 = 2.5 x 102 = 250).
 
 - Kiểu số phức: là trong dạng a + bJ, với a và b là số thực và J (hoặc j) biểu diễn căn bậc hai của -1. Phần thực là a và phần ảo là b. Nói chung, số phức không được sử dụng nhiều trong lập trình Python.
+
 **Chuyển đổi kiểu số trong python**
+
 Python chuyển đổi các số một cách nội tại bên trong một biểu thức chứa các kiểu phức tạp thành một kiểu chung để ước lượng. Tuy nhiên có đôi khi bạn cần chuyển đổi tường minh một số từ kiểu này sang kiểu khác để thỏa mãn yêu cầu của một toán tử hoặc một hàm.
+
 - Để chuyển đổi số x thành số thuần nguyên, bạn gõ int(x).
 
 - Để chuyển đổi số x thành số long, bạn gõ `long(x)`.
@@ -60,8 +67,8 @@ Python chuyển đổi các số một cách nội tại bên trong một biểu
 |Hàm log10(x)|Trả về log10(x), với x> 0 .|
 |Hàm max(x1, x2,...)|Trả về số lớn nhất|
 |Hàm min(x1, x2,...)|Trả về số nhỏ nhất|
-|Hàm modf(x)||Trả về phần nguyên và phần thập phân của x. Cả hai phần có cùng dấu với x và phần nguyên được trả về dưới dạng một số thực|
-|Hàm pow(x, y)||Trả về giá trị của x**y.|
+|Hàm modf(x)|Trả về phần nguyên và phần thập phân của x. Cả hai phần có cùng dấu với x và phần nguyên được trả về dưới dạng một số thực|
+|Hàm pow(x, y)|Trả về giá trị của x**y.|
 |Hàm round(x [,n])|Làm tròn x về n chữ số sau dấu thập phân. Python làm tròn theo cách sau: round(0.5) là 1.0 và round(-0.5) là -1.0|
 |Hàm sqrt(x)|Trả về căn bậc hai của x, với x > 0|
 
@@ -71,13 +78,18 @@ Python chuyển đổi các số một cách nội tại bên trong một biểu
 ##3. Tìm hiểu về kiểu dữ liệu String.
 -------------------------------------
 String là một trong các kiểu phổ biến nhất trong Python. String trong Python là immutable. Chúng ta có thể tạo các chuỗi bằng cách bao một text trong một trích dẫn đơn hoặc trích dẫn kép. Python coi các lệnh trích dẫn đơn và kép là như nhau. Ví dụ: `name1="Dinh Tan Thien"`
+
 **Truy cập các giá trị trong String**
+
 Python không hỗ trợ một kiểu chữ cái; chúng được coi như các chuỗi có độ dài là 1. Trong Python, String được lưu giữ dưới dạng các ký tự đơn trong vị trí ô nhớ liên tiếp nhau. Lợi thế của sử dụng String là nó có thể được truy cập từ cả hai hướng
+
 Việc lập chỉ mục của cả hai hướng đều được cung cấp bởi sử dụng String trong Python:
+
 - Chỉ mục với hướng forward bắt đầu với 0,1,2,3,…
 - Chỉ mục với hướng backward bắt đầu với -1,-2,-3,…
 
 Để truy cập các giá trị trong String, bạn sử dụng các dấu ngoặc vuông có chỉ mục ở bên trong. Ví dụ:
+
 ``var1 = 'Hello World!'
 var2 = "Python Programming"
 
@@ -92,13 +104,16 @@ var2[1:5]:  ytho``
 **Các toán tử cơ bản để thao tác với String**
 
 - Toán tử nối chuỗi + được sử dụng để nối hai chuỗi với nhau và tạo nên một chuỗi mới. Ví dụ: `"Tan "+"Thien"` kết quả `'Tan Thien'`
+
 *Cả hai toán hạng được truyền cho phép nối chuỗi này phải cùng kiểu, nếu không sẽ tạo một lỗi
+
 - Toán tử lặp chuỗi * sử dụng hai tham số. Một tham số là giá trị nguyên và tham số khác là chuỗi. Toán tử lặp chuỗi này được sử dụng để lặp đi lặp lại một chuỗi một số lần nào đó
 
 **Các toán tử membership để thao tác với String**
 
 - Toán tử in: trả về true nếu một ký tự là có mặt trong chuỗi đã cho, nếu không nó trả về false.
 - Toán tử not in: trả về true nếu một ký tự là không tồn tại trong chuỗi đã cho, nếu không nó trả về false.
+
 ``>>> str1="javapoint"
 >>> str2='sssit'
 >>> str3="seomount"
@@ -124,6 +139,7 @@ Tất cả các toán tử quan hệ (như <,>, <=, >=, ==, !=, <>) cũng có th
 **Dấu chia chuỗi [] trong Python**
 
 Có nhiều cách để chia một chuỗi. Khi chuỗi có thể được truy cập hoặc được lập chỉ mục từ cả hai hướng forward và backward thì chuỗi cũng có thể được chia theo hai hướng này. Dưới đây là cú pháp của dấu chia chuỗi [] trong Python:
+
 ``<ten_chuoi>[chi_muc_bat_dau:chi_muc_ket_thuc]
 hoac
 <ten_chuoi>[:chi_muc_ket_thuc]
@@ -134,7 +150,9 @@ hoac
 
 Một trong những đặc điểm hay nhất trong Python là toán tử định dạng chuỗi %. Toán tử này là duy nhất cho các String và được sử dụng với hàm print(). Ví dụ:
 `print "Ten toi la %s va toi nang %d kg!" % ('Xanh', 60) `
+
 Khi code trên được thực thi sẽ cho kết quả:
+
 `Ten toi la Xanh va toi nang 60 kg!`
 
 Bảng dưới đây liệt kê danh sách đầy đủ các biểu tượng có thể được sử dụng với toán tử %:
@@ -167,6 +185,7 @@ Một List có thể được tạo ra bởi lưu trữ một dãy các kiểu g
 `<ten_list>=[giatri1, giatri2, ..., giatriN];`
 
 Ví dụ:
+
 ``list1 = ['vatly', 'hoahoc', 1997, 2000];
 list2 = [1, 2, 3, 4, 5 ];
 list3 = ["a", "b", "c", "d"];``
@@ -181,13 +200,16 @@ Bạn có thể thực hiện các hoạt động nối với toán tử + hoặ
 `<ten_list>[index]=<giatri>`
 
 Ví dụ:
+
 ``list = ['vatly', 'hoahoc', 1997, 2000];
 print "Gia tri co san tai chi muc thu 2 : "
 print list[2]
 list[2] = 2001;
 print "Gia tri moi tai chi muc thu 2 : "
 print list[2]``
+
 Khi code trên được thực thi sẽ cho kết quả:
+
 ``Gia tri co san tai chi muc thu 2 :
 1997
 Gia tri moi tai chi muc thu 2 :
@@ -201,50 +223,31 @@ Gia tri moi tai chi muc thu 2 :
 
 |STT|Hàm và Miêu tả|
 |---|--------------|
-|1|Hàm cmp(list1, list2)
-
-So sánh các phần tử trong cả hai list|
-|2|	Hàm len(list)
-
-Trả về độ dài của list|
-|3|	Hàm max(list)
-
-Trả về phần tử có giá trị lớn nhất trong list|
-|4|	Hàm min(list)
-
-Trả về phần tử có giá trị nhỏ nhất trong list|
-|5|	Hàm list(seq)
-
-Chuyển đổi một tuple thành list|
+|1|Hàm cmp(list1, list2):So sánh các phần tử trong cả hai list|
+|2|	Hàm len(list):Trả về độ dài của list|
+|3|	Hàm max(list):Trả về phần tử có giá trị lớn nhất trong list|
+|4|	Hàm min(list):Trả về phần tử có giá trị nhỏ nhất trong list|
+|5|	Hàm list(seq):Chuyển đổi một tuple thành list|
 
 |STT|Phương thức và Miêu tả|
 |---|----------------------|
 |1|Phương thức list.append(obj)
-
 Phụ thêm đối tượng obj vào cuối list|
 |2|Phương thức list.count(obj)
-
 Đếm xem có bao nhiêu lần mà obj xuất hiện trong list|
 |3|Phương thức list.extend(seq)
-
 Phụ thêm các nội dung của seq vào cuối list|
 |4|Phương thức list.index(obj)
-
 Trả về chỉ mục thấp nhất trong list mà tại đó obj xuất hiện|
 |5|Phương thức list.insert(index, obj)
-
 Chèn đối tượng obj vào trong list tại index đã cho|
 |6|Phương thức list.pop(obj=list[-1])
-
 Xóa và trả về phần tử cuối cùng hoặc đối tượng obj có chỉ mục đã cung cấp từ list đã cho|
 |7|Phương thức list.remove(obj)
-
 Xóa đối tượng obj từ list|
 |8|Phương thức list.reverse()
-
 Đảo ngược thứ tự các đối tượng trong list|
 |9|Phương thức list.sort([func])
-
 Sắp xếp các đối tượng của list, sử dụng hàm so sánh nếu được cung cấp|
 
 <a name="phan5"></a>
@@ -253,11 +256,15 @@ Sắp xếp các đối tượng của list, sử dụng hàm so sánh nếu đ�
  là kiểu giá trị này chỉ có hai giá trị là đúng (**True**) và sai (**False**)
 
  Cú pháp: `bool()`
+ 
  Dùng để chuyển 1 kiểu dữ liệu khác về kiểu boolean
+ 
  Ngoài ra, còn có thể biểu diễn bằng các toán tử quan hệ như
+ 
  `` x != y               # x không bằng y
-      x > y                # x lớn hơn y
-      x < y                # x nhỏ hơn y
-      x >= y               # x lớn hơn hoặc bằng y
-      x <= y               # x nhỏ hơn hoặc bằng y
-      x==y``
+    x > y                # x lớn hơn y
+    x < y                # x nhỏ hơn y
+    x >= y               # x lớn hơn hoặc bằng y
+    x <= y               # x nhỏ hơn hoặc bằng y
+    x==y``
+      
