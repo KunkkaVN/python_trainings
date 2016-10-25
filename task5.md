@@ -7,10 +7,10 @@ Lệnh if trong Python là giống như trong ngôn ngữ C. Lệnh này đượ
 
 Cú pháp của lệnh if...else là:
 
-``if bieu_thuc:
+```if bieu_thuc:
    cac_lenh
 else:
-   cac_lenh``
+   cac_lenh```
 
 Ví dụ minh họa:
 
@@ -22,14 +22,14 @@ Giống như lệnh if....else if...else trong python thì thay bằng `if....el
 
 Cú pháp của lệnh elif là:
 
-``if bieu_thuc1:
+```if bieu_thuc1:
    cac_lenh
 elif bieu_thuc2:
    cac_lenh
 elif bieu_thuc3:
    cac_lenh
 else:
-   cac_lenh``
+   cac_lenh```
 
 Chú ý:
 
@@ -45,18 +45,18 @@ ví dụ:
 
 Vòng lặp for được sử dụng để lặp một biến qua một dãy (List hoặc String) theo thứ tự mà chúng xuất hiện. Sau đây là cú pháp của vòng lặp for:
 
-``**for** bien_vong_lap **in** day_sequense:
-   cac_lenh``
+```**for** bien_vong_lap **in** day_sequense:
+   cac_lenh```
 
 Nếu một dãy day_sequense gồm một danh sách các biểu thức, nó được ước lượng đầu tiên. Sau đó, item đầu tiên trong dãy được gán cho biến vòng lặp bien_vong_lap. Tiếp theo, các khối lệnh cac_lenh được thực thi và khối lệnh này được thực thi tới khi dãy này đã được lặp xong.
 
 Dưới đây là ví dụ minh họa vòng lặp for trong Python:
 
-``for letter in 'Python':     # Vi du dau tien
+```for letter in 'Python':     # Vi du dau tien
    print ("Chu cai hien tai :", letter)
 
 for num in range(1,5): #vong lặp với num =1 sau đó tăng dần lên 5 rồi dừng
-	print(num)``
+	print(num)```
 
 <img src="http://i.imgur.com/Qc5I6E3.jpg">
 
@@ -66,13 +66,13 @@ Python cho phép bạn có một lệnh else để liên hợp với một lện
 
 Ví dụ sau minh họa sự kết hợp của một lệnh else với một lệnh for để tìm kiếm các số nguyên tố từ 10 tới 20.
 
-``
+```
 for i in range(10,20):
    for j in range(2,i): #vòng lặ từ 2 tới i
       if i%j == 0:      #kiểm tra xem i có chia hết cho số nào từ 2 tới i không
          break #thoát khỏi vòng lặp nếu xảy ra 1 trường hợp
    else:                  # lệnh trong phần else sẽ được thực hiện nếu vòng for được chạy hết mà không bị break ra
-      print (i, "la so nguyen to")``
+      print (i, "la so nguyen to")```
 
 <img src="http://i.imgur.com/xw8hpZl.jpg">
 
@@ -80,8 +80,8 @@ for i in range(10,20):
 
 Vòng lặp while trong Python thực thi lặp đi lặp lại các lệnh hoặc phần thân của vòng lặp miễn là điều kiện đã cho là true. Khi điều kiện là false, thì điều khiển sẽ thoát ra khỏi vòng lặp. Dưới đây là cú pháp của vòng lặp while trong Python:
 
-``**while** bieu_thuc:
-   cac_lenh``
+```**while** bieu_thuc:
+   cac_lenh```
 
 Ở đây, cac_lenh có thể là một lệnh đơn hoặc một khối lệnh. Bieu_thuc có thể là bất kỳ biểu thức nào. Điều đáng chú ý về vòng lặp while là vòng lặp này có thể không chạy. Bởi vì khi điều kiện được kiểm tra là false, thì phần thân vòng lặp sẽ bị bỏ qua và lệnh đầu tiên ngay sau vòng lặp sẽ được thực thi.
 
@@ -103,7 +103,7 @@ Python cho phép bạn có một lệnh else được sử dụng kết hợp v�
 
 Cú pháp:
 
-``range([start], stop[, step])``
+```range([start], stop[, step])```
 
 Lệnh range sẽ tạo ra một mãng số bắt đầu từ 0 đến stop. Ví dụ: `range(3) == [0,1,2]`
 
@@ -112,67 +112,37 @@ Step: bước nhảy
 
 Ví dụ: 
 
-``>>> for i in range(5):
-
+```>>> for i in range(5):
 ...     print(i)
-
 ... 
-
 0
-
 1
-
 2
-
 3
-
 4
-
 >>> 
-
 >>> for i in range(3, 6):
-
 ...     print(i)
-
 ... 
-
 3
-
 4
-
 5
-
 >>> 
-
 >>> for i in range(4, 10, 2):
-
 ...     print(i)
-
 ... 
-
 4
-
 6
-
 8
-
 >>> 
-
 >>> for i in range(0, -10, -2):
-
 ...     print(i)
-
 ... 
-
 0
-
 -2
-
 -4
-
 -6
-
--8``
+-8```
 
 ###2.2. Lệnh break
 
@@ -182,7 +152,7 @@ Tương tự bên C, lệnh break dùng để thoát khỏi vòng lặp for hay 
 
 Ví dụ:
 
-``>>>for letter in 'Python':  
+```>>>for letter in 'Python':  
 
 ...   if letter == 'h':
 
@@ -197,7 +167,7 @@ Chu cai hien tai : y
 
 Chu cai hien tai : t
 
->>>``
+>>>```
 
 ###2.3. Lệnh continue
 
@@ -205,7 +175,7 @@ Lệnh continue trả về điều khiển tới phần ban đầu của vòng l
 
 Ví dụ:
 
-``>>>for letter in 'Python':    
+```>>>for letter in 'Python':    
 
 ...   if letter == 'h':
 
@@ -225,7 +195,7 @@ Chu cai hien tai : o
 
 Chu cai hien tai : n
 
->>>``
+>>>```
 
 - Nhận xét: lệnh continue khác lệnh break ở chỗ lệnh break thoát khỏi vòng lặp tại đó còn lên continue chỉ thoát khỏi giá trị hiện tại và vẫn tiếp tục vòng lặp với giá trị tiếp theo.
 
@@ -235,7 +205,7 @@ Lệnh pass, giống như tên của nó, được sử dụng khi một lệnh 
 
 Ví dụ:
 
-``>>>for letter in 'Python':   
+```>>>for letter in 'Python':   
 
 ...   if letter == 'h':
 
@@ -259,7 +229,7 @@ Chu cai hien tai : h
 
 Chu cai hien tai : o
 
-Chu cai hien tai : n``
+Chu cai hien tai : n```
 
 <a name="phan3"></a>
 ##3. Tìm hiểu về hàm:
@@ -283,16 +253,16 @@ Các tham số được truyền vào bên trong các dấu ngoặc đơn. Ở c
 
 - Sau đó là lệnh để được thực thi.
 
-``def ten_ham( cac_tham_so ):
+```def ten_ham( cac_tham_so ):
    "function_docstring"
    function_suite
-   return [bieu_thuc]``
+   return [bieu_thuc]```
 
 **Triệu hồi một hàm trong Python**
 
 Để thực thi một hàm, bạn cần gọi hàm đó. Phần định nghĩa hàm cung cấp thông tin về tên hàm các tham số và định nghĩa những hoạt động nào được thực hiện bởi hàm đó. Để thực thi phần định nghĩa của hàm, bạn cần gọi hàm đó. Cú pháp như sau:
 
-``ten_ham( cac_tham_so )``
+```ten_ham( cac_tham_so )```
 
 Ví dụ:
 
@@ -353,7 +323,7 @@ Ta có thể thấy rõ `tham số bắt buộc` ở các ví dụ trên, tức 
 
 Còn tham số mặc định có thể hiểu là tham số được định nghĩa sẵn khi xây dựng hàm. Khi gọi hàm ta có thể truyền hoặc không đối với tham số này. Ví dụ:
 
-``def sum3so (a,b,c=3):
+```def sum3so (a,b,c=3):
 
 	return (a+b+c);
 >>>
@@ -368,17 +338,17 @@ Còn tham số mặc định có thể hiểu là tham số được định ngh
 
 >>>print(y)
 
-11``
+11```
 
 Cú pháp cho một hàm có số thay đổi là:
 
-``def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
+```def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
 
    "function_docstring"
 
    function_suite
 
-   return [bieu_thuc]``
+   return [bieu_thuc]```
 
 Một dấu * được đặt trước tên biến để giữ các giá trị của các tham số loại này. Tuple này vẫn là **trống** nếu không có tham số bổ sung nào được xác định trong khi gọi hàm. Dưới đây là ví dụ đơn giản.
 
