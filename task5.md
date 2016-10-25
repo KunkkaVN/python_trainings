@@ -11,7 +11,7 @@ Cú pháp của lệnh if...else là:
    cac_lenh
 else:
    cac_lenh
- ```
+```
 
 Ví dụ minh họa:
 
@@ -160,20 +160,13 @@ Tương tự bên C, lệnh break dùng để thoát khỏi vòng lặp for hay 
 Ví dụ:
 
 ```>>>for letter in 'Python':  
-
 ...   if letter == 'h':
-
 ...      break
-
 ...   print 'Chu cai hien tai :', letter
-
 ...
 Chu cai hien tai : P
-
 Chu cai hien tai : y
-
 Chu cai hien tai : t
-
 >>>
 ```
 
@@ -184,25 +177,15 @@ Lệnh continue trả về điều khiển tới phần ban đầu của vòng l
 Ví dụ:
 
 ```>>>for letter in 'Python':    
-
 ...   if letter == 'h':
-
 ...      break
-
 ...   print 'Chu cai hien tai :', letter
-
 ...
-
 Chu cai hien tai : P
-
 Chu cai hien tai : y
-
 Chu cai hien tai : t
-
 Chu cai hien tai : o
-
 Chu cai hien tai : n
-
 >>>
 ```
 
@@ -215,29 +198,17 @@ Lệnh pass, giống như tên của nó, được sử dụng khi một lệnh 
 Ví dụ:
 
 ```>>>for letter in 'Python':   
-
 ...   if letter == 'h':
-
 ...      pass
-
 ...      print 'Day la khoi pass'
-
 ...   print 'Chu cai hien tai :', letter
-
 ...
-
 Chu cai hien tai : P
-
 Chu cai hien tai : y
-
 Chu cai hien tai : t
-
 Day la khoi pass
-
 Chu cai hien tai : h
-
 Chu cai hien tai : o
-
 Chu cai hien tai : n
 ```
 
@@ -336,31 +307,21 @@ Ta có thể thấy rõ `tham số bắt buộc` ở các ví dụ trên, tức 
 Còn tham số mặc định có thể hiểu là tham số được định nghĩa sẵn khi xây dựng hàm. Khi gọi hàm ta có thể truyền hoặc không đối với tham số này. Ví dụ:
 
 ```def sum3so (a,b,c=3):
-
 	return (a+b+c);
 >>>
-
 >>>x=sum3so(5,2)
-
 >>>y=sum3so(5,2,4)
-
 >>>print (x)
-
 10
-
 >>>print(y)
-
 11
 ```
 
 Cú pháp cho một hàm có số thay đổi là:
 
 ```def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
-
    "function_docstring"
-
    function_suite
-
    return [bieu_thuc]
 ```
 
