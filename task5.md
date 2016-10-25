@@ -7,7 +7,8 @@ Lệnh if trong Python là giống như trong ngôn ngữ C. Lệnh này đượ
 
 Cú pháp của lệnh if...else là:
 
-```if bieu_thuc:
+```sh
+if bieu_thuc:
    cac_lenh
 else:
    cac_lenh
@@ -23,7 +24,8 @@ Giống như lệnh if....else if...else trong python thì thay bằng `if....el
 
 Cú pháp của lệnh elif là:
 
-```if bieu_thuc1:
+```sh
+if bieu_thuc1:
    cac_lenh
 elif bieu_thuc2:
    cac_lenh
@@ -47,7 +49,8 @@ ví dụ:
 
 Vòng lặp for được sử dụng để lặp một biến qua một dãy (List hoặc String) theo thứ tự mà chúng xuất hiện. Sau đây là cú pháp của vòng lặp for:
 
-```**for** bien_vong_lap **in** day_sequense:
+```sh
+**for** bien_vong_lap **in** day_sequense:
    cac_lenh
 ```
 
@@ -55,7 +58,8 @@ Nếu một dãy day_sequense gồm một danh sách các biểu thức, nó đ�
 
 Dưới đây là ví dụ minh họa vòng lặp for trong Python:
 
-```for letter in 'Python':     # Vi du dau tien
+```sh
+for letter in 'Python':     # Vi du dau tien
    print ("Chu cai hien tai :", letter)
 
 for num in range(1,5): #vong lặp với num =1 sau đó tăng dần lên 5 rồi dừng
@@ -70,7 +74,8 @@ Python cho phép bạn có một lệnh else để liên hợp với một lện
 
 Ví dụ sau minh họa sự kết hợp của một lệnh else với một lệnh for để tìm kiếm các số nguyên tố từ 10 tới 20.
 
-```for i in range(10,20):
+```sh
+for i in range(10,20):
    for j in range(2,i): #vòng lặ từ 2 tới i
       if i%j == 0:      #kiểm tra xem i có chia hết cho số nào từ 2 tới i không
          break #thoát khỏi vòng lặp nếu xảy ra 1 trường hợp
@@ -84,7 +89,8 @@ Ví dụ sau minh họa sự kết hợp của một lệnh else với một l�
 
 Vòng lặp while trong Python thực thi lặp đi lặp lại các lệnh hoặc phần thân của vòng lặp miễn là điều kiện đã cho là true. Khi điều kiện là false, thì điều khiển sẽ thoát ra khỏi vòng lặp. Dưới đây là cú pháp của vòng lặp while trong Python:
 
-```**while** bieu_thuc:
+```sh
+**while** bieu_thuc:
    cac_lenh
 ```
 
@@ -108,7 +114,8 @@ Python cho phép bạn có một lệnh else được sử dụng kết hợp v�
 
 Cú pháp:
 
-```range([start], stop[, step])
+```sh
+range([start], stop[, step])
 ```
 
 Lệnh range sẽ tạo ra một mãng số bắt đầu từ 0 đến stop. Ví dụ: `range(3) == [0,1,2]`
@@ -118,7 +125,8 @@ Step: bước nhảy
 
 Ví dụ: 
 
-```>>> for i in range(5):
+```sh
+>>> for i in range(5):
 ...     print(i)
 ... 
 0
@@ -159,7 +167,8 @@ Tương tự bên C, lệnh break dùng để thoát khỏi vòng lặp for hay 
 
 Ví dụ:
 
-```>>>for letter in 'Python':  
+```sh
+>>>for letter in 'Python':  
 ...   if letter == 'h':
 ...      break
 ...   print 'Chu cai hien tai :', letter
@@ -176,7 +185,8 @@ Lệnh continue trả về điều khiển tới phần ban đầu của vòng l
 
 Ví dụ:
 
-```>>>for letter in 'Python':    
+```sh
+>>>for letter in 'Python':    
 ...   if letter == 'h':
 ...      break
 ...   print 'Chu cai hien tai :', letter
@@ -197,7 +207,8 @@ Lệnh pass, giống như tên của nó, được sử dụng khi một lệnh 
 
 Ví dụ:
 
-```>>>for letter in 'Python':   
+```sh
+>>>for letter in 'Python':   
 ...   if letter == 'h':
 ...      pass
 ...      print 'Day la khoi pass'
@@ -234,7 +245,8 @@ Các tham số được truyền vào bên trong các dấu ngoặc đơn. Ở c
 
 - Sau đó là lệnh để được thực thi.
 
-```def ten_ham( cac_tham_so ):
+```sh
+def ten_ham( cac_tham_so ):
    "function_docstring"
    function_suite
    return [bieu_thuc]
@@ -244,8 +256,7 @@ Các tham số được truyền vào bên trong các dấu ngoặc đơn. Ở c
 
 Để thực thi một hàm, bạn cần gọi hàm đó. Phần định nghĩa hàm cung cấp thông tin về tên hàm các tham số và định nghĩa những hoạt động nào được thực hiện bởi hàm đó. Để thực thi phần định nghĩa của hàm, bạn cần gọi hàm đó. Cú pháp như sau:
 
-```ten_ham( cac_tham_so )
-```
+`ten_ham( cac_tham_so )`
 
 Ví dụ:
 
@@ -306,7 +317,8 @@ Ta có thể thấy rõ `tham số bắt buộc` ở các ví dụ trên, tức 
 
 Còn tham số mặc định có thể hiểu là tham số được định nghĩa sẵn khi xây dựng hàm. Khi gọi hàm ta có thể truyền hoặc không đối với tham số này. Ví dụ:
 
-```def sum3so (a,b,c=3):
+```sh
+def sum3so (a,b,c=3):
 	return (a+b+c);
 >>>
 >>>x=sum3so(5,2)
@@ -319,7 +331,8 @@ Còn tham số mặc định có thể hiểu là tham số được định ngh
 
 Cú pháp cho một hàm có số thay đổi là:
 
-```def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
+```sh
+def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
    "function_docstring"
    function_suite
    return [bieu_thuc]
