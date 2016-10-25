@@ -10,7 +10,8 @@ Cú pháp của lệnh if...else là:
 ```if bieu_thuc:
    cac_lenh
 else:
-   cac_lenh```
+   cac_lenh
+ ```
 
 Ví dụ minh họa:
 
@@ -29,7 +30,8 @@ elif bieu_thuc2:
 elif bieu_thuc3:
    cac_lenh
 else:
-   cac_lenh```
+   cac_lenh
+```
 
 Chú ý:
 
@@ -46,7 +48,8 @@ ví dụ:
 Vòng lặp for được sử dụng để lặp một biến qua một dãy (List hoặc String) theo thứ tự mà chúng xuất hiện. Sau đây là cú pháp của vòng lặp for:
 
 ```**for** bien_vong_lap **in** day_sequense:
-   cac_lenh```
+   cac_lenh
+```
 
 Nếu một dãy day_sequense gồm một danh sách các biểu thức, nó được ước lượng đầu tiên. Sau đó, item đầu tiên trong dãy được gán cho biến vòng lặp bien_vong_lap. Tiếp theo, các khối lệnh cac_lenh được thực thi và khối lệnh này được thực thi tới khi dãy này đã được lặp xong.
 
@@ -56,7 +59,8 @@ Dưới đây là ví dụ minh họa vòng lặp for trong Python:
    print ("Chu cai hien tai :", letter)
 
 for num in range(1,5): #vong lặp với num =1 sau đó tăng dần lên 5 rồi dừng
-	print(num)```
+	print(num)
+```
 
 <img src="http://i.imgur.com/Qc5I6E3.jpg">
 
@@ -71,7 +75,8 @@ Ví dụ sau minh họa sự kết hợp của một lệnh else với một l�
       if i%j == 0:      #kiểm tra xem i có chia hết cho số nào từ 2 tới i không
          break #thoát khỏi vòng lặp nếu xảy ra 1 trường hợp
    else:                  # lệnh trong phần else sẽ được thực hiện nếu vòng for được chạy hết mà không bị break ra
-      print (i, "la so nguyen to")```
+      print (i, "la so nguyen to")
+```
 
 <img src="http://i.imgur.com/xw8hpZl.jpg">
 
@@ -80,7 +85,8 @@ Ví dụ sau minh họa sự kết hợp của một lệnh else với một l�
 Vòng lặp while trong Python thực thi lặp đi lặp lại các lệnh hoặc phần thân của vòng lặp miễn là điều kiện đã cho là true. Khi điều kiện là false, thì điều khiển sẽ thoát ra khỏi vòng lặp. Dưới đây là cú pháp của vòng lặp while trong Python:
 
 ```**while** bieu_thuc:
-   cac_lenh```
+   cac_lenh
+```
 
 Ở đây, cac_lenh có thể là một lệnh đơn hoặc một khối lệnh. Bieu_thuc có thể là bất kỳ biểu thức nào. Điều đáng chú ý về vòng lặp while là vòng lặp này có thể không chạy. Bởi vì khi điều kiện được kiểm tra là false, thì phần thân vòng lặp sẽ bị bỏ qua và lệnh đầu tiên ngay sau vòng lặp sẽ được thực thi.
 
@@ -102,7 +108,8 @@ Python cho phép bạn có một lệnh else được sử dụng kết hợp v�
 
 Cú pháp:
 
-```range([start], stop[, step])```
+```range([start], stop[, step])
+```
 
 Lệnh range sẽ tạo ra một mãng số bắt đầu từ 0 đến stop. Ví dụ: `range(3) == [0,1,2]`
 
@@ -141,7 +148,8 @@ Ví dụ:
 -2
 -4
 -6
--8```
+-8
+```
 
 ###2.2. Lệnh break
 
@@ -166,7 +174,8 @@ Chu cai hien tai : y
 
 Chu cai hien tai : t
 
->>>```
+>>>
+```
 
 ###2.3. Lệnh continue
 
@@ -194,7 +203,8 @@ Chu cai hien tai : o
 
 Chu cai hien tai : n
 
->>>```
+>>>
+```
 
 - Nhận xét: lệnh continue khác lệnh break ở chỗ lệnh break thoát khỏi vòng lặp tại đó còn lên continue chỉ thoát khỏi giá trị hiện tại và vẫn tiếp tục vòng lặp với giá trị tiếp theo.
 
@@ -228,7 +238,8 @@ Chu cai hien tai : h
 
 Chu cai hien tai : o
 
-Chu cai hien tai : n```
+Chu cai hien tai : n
+```
 
 <a name="phan3"></a>
 ##3. Tìm hiểu về hàm:
@@ -255,13 +266,15 @@ Các tham số được truyền vào bên trong các dấu ngoặc đơn. Ở c
 ```def ten_ham( cac_tham_so ):
    "function_docstring"
    function_suite
-   return [bieu_thuc]```
+   return [bieu_thuc]
+```
 
 **Triệu hồi một hàm trong Python**
 
 Để thực thi một hàm, bạn cần gọi hàm đó. Phần định nghĩa hàm cung cấp thông tin về tên hàm các tham số và định nghĩa những hoạt động nào được thực hiện bởi hàm đó. Để thực thi phần định nghĩa của hàm, bạn cần gọi hàm đó. Cú pháp như sau:
 
-```ten_ham( cac_tham_so )```
+```ten_ham( cac_tham_so )
+```
 
 Ví dụ:
 
@@ -337,7 +350,8 @@ Còn tham số mặc định có thể hiểu là tham số được định ngh
 
 >>>print(y)
 
-11```
+11
+```
 
 Cú pháp cho một hàm có số thay đổi là:
 
@@ -347,7 +361,8 @@ Cú pháp cho một hàm có số thay đổi là:
 
    function_suite
 
-   return [bieu_thuc]```
+   return [bieu_thuc]
+```
 
 Một dấu * được đặt trước tên biến để giữ các giá trị của các tham số loại này. Tuple này vẫn là **trống** nếu không có tham số bổ sung nào được xác định trong khi gọi hàm. Dưới đây là ví dụ đơn giản.
 
