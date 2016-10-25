@@ -113,35 +113,65 @@ Step: bước nhảy
 Ví dụ: 
 
 ``>>> for i in range(5):
+
 ...     print(i)
+
 ... 
+
 0
+
 1
+
 2
+
 3
+
 4
+
 >>> 
+
 >>> for i in range(3, 6):
+
 ...     print(i)
+
 ... 
+
 3
+
 4
+
 5
+
 >>> 
+
 >>> for i in range(4, 10, 2):
+
 ...     print(i)
+
 ... 
+
 4
+
 6
+
 8
+
 >>> 
+
 >>> for i in range(0, -10, -2):
+
 ...     print(i)
+
 ... 
+
 0
+
 -2
+
 -4
+
 -6
+
 -8``
 
 ###2.2. Lệnh break
@@ -152,14 +182,21 @@ Tương tự bên C, lệnh break dùng để thoát khỏi vòng lặp for hay 
 
 Ví dụ:
 
-``>>>for letter in 'Python':     
+``>>>for letter in 'Python':  
+
 ...   if letter == 'h':
+
 ...      break
+
 ...   print 'Chu cai hien tai :', letter
+
 ...
 Chu cai hien tai : P
+
 Chu cai hien tai : y
+
 Chu cai hien tai : t
+
 >>>``
 
 ###2.3. Lệnh continue
@@ -169,15 +206,25 @@ Lệnh continue trả về điều khiển tới phần ban đầu của vòng l
 Ví dụ:
 
 ``>>>for letter in 'Python':    
+
 ...   if letter == 'h':
+
 ...      break
+
 ...   print 'Chu cai hien tai :', letter
+
 ...
+
 Chu cai hien tai : P
+
 Chu cai hien tai : y
+
 Chu cai hien tai : t
+
 Chu cai hien tai : o
+
 Chu cai hien tai : n
+
 >>>``
 
 - Nhận xét: lệnh continue khác lệnh break ở chỗ lệnh break thoát khỏi vòng lặp tại đó còn lên continue chỉ thoát khỏi giá trị hiện tại và vẫn tiếp tục vòng lặp với giá trị tiếp theo.
@@ -188,18 +235,30 @@ Lệnh pass, giống như tên của nó, được sử dụng khi một lệnh 
 
 Ví dụ:
 
-``>>>for letter in 'Python':    
+``>>>for letter in 'Python':   
+
 ...   if letter == 'h':
+
 ...      pass
+
 ...      print 'Day la khoi pass'
+
 ...   print 'Chu cai hien tai :', letter
+
 ...
+
 Chu cai hien tai : P
+
 Chu cai hien tai : y
+
 Chu cai hien tai : t
+
 Day la khoi pass
+
 Chu cai hien tai : h
+
 Chu cai hien tai : o
+
 Chu cai hien tai : n``
 
 <a name="phan3"></a>
@@ -289,3 +348,38 @@ Python hỗ trợ các kiểu tham số chính thức sau:
 |Tham số bắt buộc|Tham số mặc định|Tham số từ khóa|Số tham số thay đổi|
 |----------------|----------------|---------------|-------------------|
 |các tham số được truyền tới một hàm theo một thứ tự chính xác|tham số mà cung cấp các giá trị mặc định cho các tham số được truyền trong phần định nghĩa hàm, trong trường hợp mà giá trị không được cung cấp trong lời gọi hàm|Sử dụng tham số từ khóa, tham số được truyền trong lời gọi hàm được kết nối với phần định nghĩa hàm dựa trên tên của tham số|Bạn có thể cần xử lý một hàm mà có số tham nhiều hơn là bạn đã xác định trong khi định nghĩa hàm|
+
+Ta có thể thấy rõ `tham số bắt buộc` ở các ví dụ trên, tức là ta phải truyền đầy đủ theo thứ tự khi gọi hàm nếu thiếu sẽ báo lỗi
+
+Còn tham số mặc định có thể hiểu là tham số được định nghĩa sẵn khi xây dựng hàm. Khi gọi hàm ta có thể truyền hoặc không đối với tham số này. Ví dụ:
+
+``def sum3so (a,b,c=3):
+
+	return (a+b+c);
+>>>
+
+>>>x=sum3so(5,2)
+
+>>>y=sum3so(5,2,4)
+
+>>>print (x)
+
+10
+
+>>>print(y)
+
+11``
+
+Cú pháp cho một hàm có số thay đổi là:
+
+``def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
+
+   "function_docstring"
+
+   function_suite
+
+   return [bieu_thuc]``
+
+Một dấu * được đặt trước tên biến để giữ các giá trị của các tham số loại này. Tuple này vẫn là **trống** nếu không có tham số bổ sung nào được xác định trong khi gọi hàm. Dưới đây là ví dụ đơn giản.
+
+<img src="http://i.imgur.com/7QBHlM7.jpg">
