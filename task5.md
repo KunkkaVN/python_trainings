@@ -66,8 +66,7 @@ Python cho phép bạn có một lệnh else để liên hợp với một lện
 
 Ví dụ sau minh họa sự kết hợp của một lệnh else với một lệnh for để tìm kiếm các số nguyên tố từ 10 tới 20.
 
-```
-for i in range(10,20):
+```for i in range(10,20):
    for j in range(2,i): #vòng lặ từ 2 tới i
       if i%j == 0:      #kiểm tra xem i có chia hết cho số nào từ 2 tới i không
          break #thoát khỏi vòng lặp nếu xảy ra 1 trường hợp
