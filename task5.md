@@ -1,3 +1,17 @@
+#Mục lục
+[**1.Lệnh if...elif...else trong Python**](#phan1)
+
+[**2.Tìm hiểu về một số lệnh như range(), break, continue, pass**](#phan2)
+
+[**3.Tìm hiểu về hàm**](#phan3)
+
+[**4.Tìm hiểu về __name__ và cú pháp __name__= '__main__'**](#phan4)
+
+[**5.Tìm hiểu về cú pháp lambda**](#phan5)
+
+[**6.Tìm hiểu về ceaser**](#phan6)
+[**7.script**](#phan7)
+
 <a name="phan1"></a>
 ##1. Tìm hiểu về các lệnh if else, for else, while:
 ---------------------------------------------------
@@ -341,3 +355,57 @@ def tenham([tham_so_chinh_thuc,] *var_args_tuple ):
 Một dấu * được đặt trước tên biến để giữ các giá trị của các tham số loại này. Tuple này vẫn là **trống** nếu không có tham số bổ sung nào được xác định trong khi gọi hàm. Dưới đây là ví dụ đơn giản.
 
 <img src="http://i.imgur.com/7QBHlM7.jpg">
+
+<a name="phan4"></a>
+##4. Tìm hiểu về __name__ và cú pháp __name__= '__main__':
+----------------------------------------------------------
+
+Biến __name__ là một biến được tự động sinh ra trong mỗi một file .py có giá trị bằng đúng tên của file .py đó
+
+`Dạng __name__.py => Ví dụ: wed.py có chứa __name__ = "wed"`
+
+Biến __main__ là một biến được tự động sinh ra khi một process python được chạy. Nó có giá trị bằng đúng tên của file đang chiếm quyền thực thị.
+
+Việc sử dụng kĩ thuật trên dùng để xác định xem đoạn code có được chạy trong file đang chiếm quyền thực thi hay không. Hay là chạy thông qua việc được import và được gọi đến bởi file đang chiếm quyền thực thị.
+
+<a name="phan5"></a>
+##5. Tìm hiểu về cus pháp lambda:
+---------------------------------
+
+**Hàm nặc danh trong Python**
+
+Hàm nặc danh (hàm vô danh), hiểu theo cách đơn giản, là hàm không có tên và chúng không được khai báo theo cách chính thức bởi từ khóa **def**. Để khai báo hàm này, bạn sử dụng từ khóa **lambda**. Lambda nhận bất kỳ lượng tham số nào và chỉ trả về một giá trị trong dạng một biểu thức đã được ước lượng. Bạn không thể gọi trực tiếp gọi hàm nặc danh để in bởi vì labda cần một biểu thức. Ngoài ra, các hàm lambda có namespace cục bộ của chúng. Dưới đây là cú pháp của hàm lamda:
+
+```sh
+lambda [arg1 [,arg2,.....argn]]:bieu_thuc
+```
+
+Với từ khóa lambda, các hàm ẩn danh nhỏ có thể được tạo ra. Ví dụở đây là một hàm mà trả về tổng của 2 đối số của nó: “lambda a, b: a+b”. Các dạng lambda có thể được sử dụng ở bất cứ nơi nào đối tượng hàm được yêu cầu. Chúng bị hạn chế bởi một biểu thức đơn. Giống như các định nghĩa hàm lồng nhau, dạng lambda có thể tham chiếu các biến từ phạm vi chứa nó.
+
+ví dụ:
+
+<img src="http://i.imgur.com/LmpZlMC.jpg">
+
+<a name="phan6"></a>
+##6. Tìm hiểu về mã ceasar:
+---------------------------
+
+Mật mã Ceasar là một trong những kỹ thuật mã hóa đơn giản nhất và được biết đến rộng rãi nhất. Ceasar là một loại mật mã thay thế, trong đó mỗi một từ trong đoạn mã cần mã hóa được thay thế bằng một từ khác bằng cách dịch một khoảng cách thứ tự trong bảng alphabet.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/856px-Caesar_cipher_left_shift_of_3.svg.png">
+
+Ví dụ như ta thấy ký tự E được thay thế bằng ký tự B sau bước dịch =3.
+
+Ví dụ với file `cipher.txt` của task 5 có thể sử dụng tool online, chỉ việc thử với từng bước nhảy (tối đa 26) để thử mật mã được mã hóa ở bước nhảy nào ở đây là 14
+
+<img src="http://i.imgur.com/pOi4L8o.jpg">
+
+<a name="phan7"></a>
+##7. Tìm hiểu về mã Script
+--------------------------
+
+Script là một tệp văn bản chứa các dòng lệnh thực thi.
+
+Thường thì Script được đính kèm vào một "trang Web" bên trong một "tab", hoặc được truy xuất từ một "file Script" thông qua một "đường dẫn" đến script đó... 
+
+Lời nhắn :equality
