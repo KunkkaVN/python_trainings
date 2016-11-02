@@ -1,3 +1,10 @@
+#Mục lục
+[**1.Ý tưởng giải challenge 3**](#phan1)
+
+[**2.Các bước giải**](#phan2)
+
+[**3.Dịch bài module re**](#phan3)
+
 <a name="phan1"></a>
 ##1. Ý tưởng giải challenge-lv3:
 --------------------------------
@@ -18,35 +25,25 @@ Sau khi cắt xong thì mình lưu nó vào 1 file tên là task7.txt để thu�
 
 ```sh
 import requests
-
 source = requests.get('http://www.pythonchallenge.com/pc/def/equality.html') #dùng thư viện requests đê lất source
-
 line = source.text
-
 a=line.index('**<!--**')
-
 b=line.index('**-->**')
-
 line2= line[a:b] #cắt source từ vị trí có kí tự **<!--** đến vị trí có kí tuwh **-->**
-
 f = open('task7.txt','w') #tạo file sau đó viết vào file
-
 f.write(line2)
-
-f.close()```
+f.close()
+```
 
 Lúc này ta đã có file task7.txt chứa đoạn code cần xử lý. Ta sẽ sử dụng thư viện re-xử lý chuỗi nâng cao để lọc lấy những chữ cái này
 
 ```sh
 import re
-
 f = open('task7.txt','r')
-
 line = f.read()
-
 line2 = re.findall("[^A-Z]+[A-Z]{3}([a-z])[A-Z]{3}[^A-Z]+",line) #sử dụng thư viện re, kết nối tới chữ thõa [^A-Z] là từ không phải A-Z + 3 lần xuất hiện [A-Z] đặt kết nỗi tại [a-z] và phía sau cũng thõa mãn tính chất 3 hoa, 1 thường
-
-print line2```
+print line2
+```
 
 Code chương trình:
 
