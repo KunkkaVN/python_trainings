@@ -7,8 +7,8 @@
 [**3. Thư viện pickle**](#phan3)
 
 <a name="phan1"></a>
-##1. Challenge python 4:
-------------------------
+##1. Challenge python 4: peak
+-----------------------------
 
 Challenge này chỉ đưa ra cho chúng ta 1 bức hình và chẳng có gợi ý gì cả, tất nhiên nhìn bức hình thì chả hiểu nó có ý nghĩa quần què gì cả
 
@@ -36,8 +36,8 @@ print line
 ```
 
 <a name="phan2"></a>
-##2. Challenge python 5:
-------------------------
+##2. Challenge python 5: channel
+--------------------------------
 
 Code: http://codepad.org/7NbKcn2I
 
