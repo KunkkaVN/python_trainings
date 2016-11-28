@@ -4,6 +4,7 @@
 
 http://www.pythonchallenge.com/pc/def/integrity.html
 
+```sh
 import bz2, urllib2
 
 line = urllib2.urlopen("http://www.pythonchallenge.com/pc/def/integrity.html").read()
@@ -13,11 +14,12 @@ pw = line.splitlines()[21][5:-1]
 
 print bz2.decompress(un.decode('string_escape'))	
 print bz2.decompress(pw.decode('string_escape'))
+```
 
 #2.Challenge 9: bull
 --------------------
 http://www.pythonchallenge.com/pc/return/good.html
-
+```sh
 from PIL import Image,ImageDraw
 
 first = [146,399,163,403,170,393,169,391,166,386,170,381,170,371,170,355,169,346,167,335,170,329,170,320,170,
@@ -49,3 +51,4 @@ draw = ImageDraw.Draw(im)
 draw.line(first, fill= 'white')
 draw.line(second, fill= 'white')
 im.show()
+```
